@@ -1,18 +1,22 @@
 
 def calc(a,b):
     sum = a + b
-    print(sum)
+    print("Sum: ", str(sum))
     difference = a - b
-    print(difference)
+    print("Difference: ",str(difference))
     multiply = a * b
-    print(multiply)
-    divide = None
+    print("Product: ", str(multiply))
+    divide = 0
     if(b != 0):
         divide = a / b
-        print(divide)
+        print("Quotient: ",str(divide))
     else:
         print("You can't divide by zero!!!")
     results = [sum,difference,multiply,divide]
+    addedList = 0
+    for num in results:
+        addedList += num
+    print("Added list: ", str(addedList))
 
 
 calc(4,3)
