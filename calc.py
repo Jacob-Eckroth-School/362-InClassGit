@@ -1,3 +1,4 @@
 
 def calc(a,b):
-    pass
+    sum = a + b
+    print(sum)
