@@ -6,8 +6,11 @@ def calc(a,b):
     print(difference)
     multiply = a * b
     print(multiply)
-    divide = a / b
-    print(divide)
+    if(b != 0):
+        divide = a / b
+        print(divide)
+    else:
+        print("You can't divide by zero!!!")
 
 
 calc(4,3)
