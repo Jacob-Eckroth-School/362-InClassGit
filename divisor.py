@@ -7,8 +7,9 @@ def divisors(num):
     print(divisorsList)
 
 def getUserInput():
-    input = input("Please enter a positive integer:")
-
-
-
+    userInput = input("Please enter a positive integer:")
+    while(!isdigit(userInput)):
+        print("Incorrect input, please enter a positive integer >0")
+        userInput = input("Please enter a positive integer:")
+    divisors(int(userInput))
 getUserInput()
