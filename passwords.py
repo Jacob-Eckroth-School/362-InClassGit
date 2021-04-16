@@ -4,10 +4,8 @@ import random
 def createPass(num):
     password = ""
     for i in range(0,num):
-        randomNumber = random.randint(65,90)
-        upperCase = random.randint(0,1)
-        if(upperCase == 0):
-            randomNumber +=32
+        randomNumber = random.randint(32,126)
+       
         password += chr(randomNumber)
 
     print("Your password: " + password)
