@@ -1,0 +1,3 @@
+
+def divisors(num):
+    divisorsList = []
