@@ -1,4 +1,12 @@
-createPass(num):
+import random
+
+
+def createPass(num):
+    password = ""
+    for i in range(0,num):
+        password += chr(random.randint(97,122))
+
+    print("Your password: " + password)
 
 
 def getUserInput():
@@ -7,3 +15,5 @@ def getUserInput():
         print("Incorrect input, please enter a integer >0")
         userInput = input("Please enter a positive integer:")
     createPass(int(userInput))
+
+getUserInput()
